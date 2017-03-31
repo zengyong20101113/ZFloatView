@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_float"
+    tools:context="com.demo.zfloatview.MainActivity" >
+
+<!--     <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是悬浮窗"
+        
+         />
+    
+    <Button
+        android:id="@+id/fv_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开对话框"
+         /> -->
+        <ImageView 
+           	 android:id="@+id/iv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/dk_suspend_icon_normal"
+             android:clickable="false"/>
+    
+    
+
+</LinearLayout>
