@@ -4,6 +4,9 @@ import java.lang.reflect.Field;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Bitmap;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
@@ -93,6 +96,20 @@ public class MainActivity extends Activity {
 
 			}
 		});
+		
+		
+		 PackageManager pm = getPackageManager();  
+	        PackageInfo pi = null;
+			try {
+				pi = pm.getPackageInfo(getPackageName(), 0);
+			} catch (NameNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}  
+	        String versionName = pi.versionName;  
+	        int versioncode = pi.versionCode;
+	        
+	        System.out.println("*********  versionName="+versionName+" ,******  versioncode="+versioncode);
 
 	}
 
